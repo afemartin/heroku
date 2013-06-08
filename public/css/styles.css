@@ -3,6 +3,10 @@ body {
 	margin-bottom: 20px;
 }
 
-footer.well {
+section {
+	margin-bottom: 20px;
+}
+
+footer .well {
 	text-align: center;
 }
