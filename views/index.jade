@@ -2,6 +2,40 @@ extends layout
 
 block content
 	section.container
-		h3
-			i.icon-home
-			|  Hello World!
+		div.row
+			div.span6
+				form.form-horizontal(method='post',action='/')
+					fieldset
+						legend
+							i.icon-film
+							|  Add a new film
+						div.control-group
+							label.control-label(for='title') Title:
+							div.controls
+								input.input-block-level(type='text',name='title',id='title',required)
+						div.control-group
+							label.control-label(for='description') Description:
+							div.controls
+								textarea.input-block-level(name='description',id='description',required)
+						div.control-group
+							div.controls
+								button.btn.btn-large.btn-block.btn-primary(type='submit')
+									i.icon-save
+									|  Save
+			div.span6
+				fieldset
+					legend
+						i.icon-film
+						|  List of stored films
+					table.table.table-bordered
+						thead
+							tr
+								th #
+								th Title
+								th Description
+						tbody
+							each film in films
+								tr
+									td #{film.id}
+									td #{film.title}
+									td #{film.description}

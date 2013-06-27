@@ -6,19 +6,20 @@ html(ng-app)
 		title AfeMartin
 		block stylesheets
 			link(rel='stylesheet', href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css')
-			link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css')
+			link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css')
 			link(rel='stylesheet', href='/css/styles.css')
 	body
-	block header
-		header.container
-			.hero-unit
-				h1 AfeMartin 
-					small (Node + Express + Angular)		
-	block content
-	block footer
-		footer.container
-			.well afemartin.herokuapp.com &copy; 2013
-	block scripts
-		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
-		script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
-		script(src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js')
+		block header
+			header.container
+				.hero-unit
+					h1 AfeMartin 
+						small (Node + Express + Angular)
+		block content
+		block footer
+			footer.container
+				.well afemartin.herokuapp.com &copy; 2013
+		block scripts
+			script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
+			script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')
+			script(src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js')
+			script(src='/js/common.js')
