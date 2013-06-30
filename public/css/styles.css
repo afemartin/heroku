@@ -1,3 +1,7 @@
+/**
+ * APP STYLES
+ **************************************/
+
 body {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -8,5 +12,18 @@ section {
 }
 
 footer .well {
+	text-align: center;
+}
+
+/**
+ * BOOSTRAT OVERRIDE FIXES
+ **************************************/
+
+legend + .control-group {
+    margin-top: 0;
+}
+
+.js-film-delete {
+	cursor: pointer;
 	text-align: center;
 }

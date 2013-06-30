@@ -4,7 +4,7 @@ block content
 	section.container
 		div.row
 			div.span6
-				form.form-horizontal(method='post',action='/')
+				form#create-film-form.form-horizontal
 					fieldset
 						legend
 							i.icon-film
@@ -33,9 +33,29 @@ block content
 								th #
 								th Title
 								th Description
+								th Action
 						tbody
 							each film in films
 								tr
 									td #{film.id}
 									td #{film.title}
 									td #{film.description}
+									td
+										div.js-film-delete(title='delete',data-film-id='#{film.id}')
+											i.icon-trash
+		div.row
+			div.span6
+				form#search-film-form.form-horizontal
+					fieldset
+						legend
+							i.icon-film
+							|  Search films (powered by Freebase)
+						div.control-group
+							label.control-label(for='title') Title:
+							div.controls
+								input.input-block-level(type='text',name='title',id='title',required)
+						div.control-group
+							div.controls
+								button.btn.btn-large.btn-block.btn-primary(type='submit')
+									i.icon-search
+									|  Search
